@@ -36,7 +36,13 @@
                 <executions>
                     <execution>
                         <phase>package</phase>
-                        <goals><goal>copy</goal></goals>
+			<goals>
+				<goal>copy</goal>
+				<goal>clear</goal>
+				<goal>compile</goal>
+				<goal>package</goal>
+			</goals>
+			
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
